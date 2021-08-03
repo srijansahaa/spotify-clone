@@ -2,7 +2,7 @@ import React from "react";
 import "./Login.css";
 import { loginUrl } from "./spotify";
 
-export default function Login() {
+export default function Login({token_state}) {
   return (
     <div className="login">
       <img

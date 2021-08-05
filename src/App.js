@@ -9,8 +9,8 @@ import SpotifyWebApi from "spotify-web-api-js";
 const s = new SpotifyWebApi();
 
 function App() {
-  const [token, setToken] = useState(null);
-  const [{}, dispatch] = useDataLayerValue();
+  // const [token, setToken] = useState(null);
+  const [{token}, dispatch] = useDataLayerValue();
 
   useEffect(() => {
     const hash = getTokenFromUrl();

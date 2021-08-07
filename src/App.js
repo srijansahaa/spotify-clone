@@ -9,7 +9,6 @@ import SpotifyWebApi from "spotify-web-api-js";
 const s = new SpotifyWebApi();
 
 function App() {
-  // const [token, setToken] = useState(null);
   const [{token}, dispatch] = useDataLayerValue();
 
   useEffect(() => {
@@ -25,7 +24,7 @@ function App() {
         token: _token,
       });
 
-      s.getPlaylist("37i9dQZEVXcJZyENOWUFo7").then((response) =>
+      s.getPlaylist("7jzM7mH17f7lEA5wZxqCyi").then((response) =>
         dispatch({
           type: "SET_DISCOVER_WEEKLY",
           discover_weekly: response,
